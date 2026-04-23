@@ -29,7 +29,7 @@ class ZoneController extends Controller
         'price_range' => 'required',
         'image' => 'required|image|max:2048',
     ]);
-     $data = $validated; // 🔥 FIX PENTING
+     $data = $validated; 
 
 if ($request->hasFile('image')) {
 
@@ -47,7 +47,9 @@ if ($request->hasFile('image')) {
     public function show($id)
     {
         $zone = Zone::findOrFail($id);
-        return view('admin.pages.zones.show', compact('zone'));
+        // Get reviews for this zone
+        $approvedReviews = $zone->reviews()->where('is_approved', true)->get();
+        return view('landing.pages.detail-zones', compact('zone', 'approvedReviews'));
     }
 
     public function edit($id)
@@ -57,22 +59,20 @@ if ($request->hasFile('image')) {
     }
 
     public function update(Request $request, $id)
-    {
-$zone = Zone::findOrFail($id);
+{
+    $zone = Zone::findOrFail($id);
 
     $validated = $request->validate([
         'name' => 'required|string|max:255',
         'description' => 'nullable',
         'price_range' => 'required',
-        'image' => 'required',
-        
+        'image' => 'nullable|image|max:2048',
     ]);
 
     $data = $validated;
 
     if ($request->hasFile('image')) {
 
-        // hapus gambar lama
         if ($zone->image && File::exists(public_path('images/zones/' . $zone->image))) {
             File::delete(public_path('images/zones/' . $zone->image));
         }
@@ -89,25 +89,26 @@ $zone = Zone::findOrFail($id);
 
     $zone->update($data);
 
-    return redirect('/zones')->with('success', 'Zone updated successfully.');
-}    
+    return redirect()->route('admin.zones.index')->with('success', 'Zone updated successfully.');
+}
 
     public function destroy($id)
-    {
-        $zone = Zone::find($id);
+{
+    $zone = Zone::find($id);
 
-        if ($zone) {
+    if ($zone) {
 
-            // 🔥 HAPUS GAMBAR JUGA
-            if ($zone->image && File::exists(public_path('images/zones/' . $zone->image))) {
-                File::delete(public_path('images/zones/' . $zone->image));
-            }
-
-            $zone->delete();
-
-            return redirect('/zones')->with('success', 'Zone deleted successfully.');
-        } else {
-            return redirect('/zones')->with('error', 'Zone not found.');
+        if ($zone->image && File::exists(public_path('images/zones/' . $zone->image))) {
+            File::delete(public_path('images/zones/' . $zone->image));
         }
+
+        $zone->delete();
+
+        return redirect()->route('admin.zones.index')
+            ->with('success', 'Zone deleted successfully.');
+    } else {
+        return redirect()->route('admin.zones.index')
+            ->with('error', 'Zone not found.');
     }
+}
 }

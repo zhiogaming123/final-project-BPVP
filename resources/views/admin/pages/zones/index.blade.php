@@ -11,6 +11,8 @@
     <thead>
         <tr>
             <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
             <th>Price Range</th>
             <th>Image</th>
             <th>Actions</th>
@@ -20,9 +22,11 @@
         @forelse ($zones as $zone)
             <tr>
                 <td>{{ $zone->id }}</td>
+                <td>{{ $zone->name }}</td>
+                <td>{{ $zone->description }}</td>
                 <td>{{ $zone->price_range }}</td>
                 <td>
-                    <img src="{{ asset('public/images/zones/' . $zone->image) }}" alt="{{ $zone->name }}" width="100">
+                    <img src="{{ asset('images/zones/' . $zone->image) }}" width="100">
                 </td>
                 <td>
                     <a href="{{ route('admin.zones.show', $zone) }}" class="btn btn-info">View</a>
