@@ -3,12 +3,15 @@
 
 <!-- START HOME -->
 	<section id="home" class="home_bg"
-		style="background-image: url({{asset('/storage/landing/assets/img/bg/home-bg.jpg')}}"  background-size:cover; background-position: center center;">
-		<div class="container">
-			<div class="row">
+    style="background-image: url('{{ asset('/storage/landing/assets/img/bg/home2-bg.jpg') }}'); 
+           background-size: cover; 
+           background-position: center center; 
+           background-repeat: no-repeat;">
+    <div class="container">
+        <div class="row">
 				<div class="col-lg-10 offset-lg-1 col-sm-12 col-xs-12 text-center">
 					<div class="hero-text">
-						<h2>Best Real state deals</h2>
+						<h2>Best View In The World</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum justo vitae
 							convallis varius. Nulla tristique risus ut justo pulvinar mattis.</p>
 						<div class="home_btn">
@@ -333,204 +336,7 @@
 	</section>
 	<!-- END PORTFOLIO -->
 
-	<!-- START TEAM US -->
-	<section id="team" class="our_team section-padding">
-		<div class="container">
-			<div class="section-title text-center wow zoomIn">
-				<h2>Professional team</h2>
-				<div></div>
-			</div>
-			<div class="row text-center">
-				<div class="col-lg-3 col-sm-3 col-xs-12">
-					<div class="single_team">
-						<img src="{{asset('/storage/landing/assets/img/team/team-1.jpg')}}"" class="img-fluid" alt="" />
-						<h3>Juthi Ahmed</h3>
-						<p>Co Founder</p>
-						<ul class="list-inline">
-							<li><a href="#" class="st-facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="st-twitter"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#" class="st-instagram"><i class="fa fa-instagram"></i></a></li>
-						</ul>
-					</div><!--- END SINGLE TEAM -->
-				</div><!--- END COL -->
-				<div class="col-lg-3 col-sm-3 col-xs-12">
-					<div class="single_team">
-						<img src="{{asset('/storage/landing/assets/img/team/team-2.jpg')}}"" class="img-fluid" alt="" />
-						<h3>Masum Billah</h3>
-						<p>Co Founder</p>
-						<ul class="list-inline">
-							<li><a href="#" class="st-facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="st-twitter"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#" class="st-instagram"><i class="fa fa-instagram"></i></a></li>
-						</ul>
-					</div><!--- END SINGLE TEAM -->
-				</div><!--- END COL -->
-				<div class="col-lg-3 col-sm-3 col-xs-12">
-					<div class="single_team">
-						<img src="{{asset('/storage/landing/assets/img/team/team-3.jpg')}}"" class="img-fluid" alt="" />
-						<h3>Syed Ekram</h3>
-						<p>Co Founder</p>
-						<ul class="list-inline">
-							<li><a href="#" class="st-facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="st-twitter"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#" class="st-instagram"><i class="fa fa-instagram"></i></a></li>
-						</ul>
-					</div><!--- END SINGLE TEAM -->
-				</div><!--- END COL -->
-				<div class="col-lg-3 col-sm-3 col-xs-12">
-					<div class="single_team">
-						<img src="{{asset('/storage/landing/assets/img/team/team-4.jpg')}}"" class="img-fluid" alt="" />
-						<h3>Hanjala Haque</h3>
-						<p>Co Founder</p>
-						<ul class="list-inline">
-							<li><a href="#" class="st-facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="st-twitter"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#" class="st-instagram"><i class="fa fa-instagram"></i></a></li>
-						</ul>
-					</div><!--- END SINGLE TEAM -->
-				</div><!--- END COL -->
-			</div><!--- END ROW -->
-		</div><!--- END CONTAINER -->
-	</section>
-	<!-- END TEAM US -->
-
-	<!-- START TESTIMONIAL -->
-	<section data-stellar-background-ratio="0.3" class="our_testimonial section-padding"
-		style="background-image: url({{asset('/storage/landing/assets/img/bg/testimonial-bg.jpg')}});  background-size:cover;background-position:center;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2 col-sm-12 col-xs-12 text-center">
-					<div class="testimonial1-carousel">
-						<div class="single-testimonial">
-							<img src="{{asset('/storage/landing/assets/img/testimonial/1.jpg')}}" alt="">
-							<h4>Mark Richard</h4>
-							<span>Architecture</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui
-								venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget
-								dolor vel blandit.</p>
-						</div>
-						<div class="single-testimonial">
-							<img src="{{asset('/storage/landing/assets/img/testimonial/2.jpg')}}"" alt="">
-							<h4>Mark Richard</h4>
-							<span>Architecture</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui
-								venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget
-								dolor vel blandit.</p>
-						</div>
-						<div class="single-testimonial">
-							<img src="{{asset('/storage/landing/assets/img/testimonial/3.jpg')}}" alt="">
-							<h4>Mark Richard</h4>
-							<span>Architecture</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui
-								venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget
-								dolor vel blandit.</p>
-						</div>
-					</div>
-				</div><!-- END COL -->
-			</div><!--END  ROW  -->
-		</div><!-- END CONTAINER  -->
-	</section>
-	<!-- END TESTIMONIAL -->
-
-	<!-- START NEWSLETTER -->
-	<section class="newsletter section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="partner  wow fadeInRight">
-						<a href="#"><img src="{{asset('/storage/landing/assets/img/partner/1.png')}}"alt="image"></a>
-						<a href="#"><img src="{{asset('/storage/landing/assets/img/partner/2.png')}}"alt="image"></a>
-						<a href="#"><img src="{{asset('/storage/landing/assets/img/partner/3.png')}}"alt="image"></a>
-						<a href="#"><img src="{{asset('/storage/landing/assets/img/partner/4.png')}}"alt="image"></a>
-						<a href="#"><img src="{{asset('/storage/landing/assets/img/partner/5.png')}}"alt="image"></a>
-						<a href="#"><img src="{{asset('/storage/landing/assets/img/partner/1.png')}}"alt="image"></a>
-						<a href="#"><img src="{{asset('/storage/landing/assets/img/partner/2.png')}}"alt="image"></a>
-						<a href="#"><img src="{{asset('/storage/landing/assets/img/partner/3.png')}}"alt="image"></a>
-						<a href="#"><img src="{{asset('/storage/landing/assets/img/partner/4.png')}}"alt="image"></a>
-						<a href="#"><img src="{{asset('/storage/landing/assets/img/partner/5.png')}}"alt="image"></a>
-					</div>
-				</div><!-- END COL  -->
-			</div><!--END  ROW  -->
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3 col-sm-12 col-xs-12 text-center">
-					<div class="signup_form">
-						<h3 class="section-title-white">Subscribe to stay update</h3>
-						<!-- Replace the form action in the line below with your MailChimp embed action! -->
-						<form novalidate="" class="validate" name="mc-embedded-subscribe-form" method="post" action="#">
-							<input type="email" placeholder="Enter Email" id="mce-email" class="form-control"
-								name="EMAIL">
-							<span><button class="btn btn-detault btn-light-bg" name="subscribe"
-									type="submit">Subscribe</button></span>
-							<div id="mce-responses">
-								<div style="display:none" id="mce-error-response" class="response"></div>
-								<div style="display:none" id="mce-success-response" class="response"></div>
-							</div>
-						</form>
-					</div>
-				</div><!-- END COL  -->
-			</div><!-- END ROW  -->
-		</div><!-- END CONTAINER -->
-	</section>
-	<!-- END NEWSLETTER -->
-
-	<!-- START BLOG -->
-	<section id="blog" class="fresh-news section-padding">
-		<div class="container">
-			<div class="section-title text-center">
-				<h2>Latest News</h2>
-				<div></div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-sm-4 col-xs-12">
-					<div class="single_blog">
-						<div class="blog_img">
-							<a href="blog.html"><img src="{{asset('/storage/landing/assets/img/blog/blog-1.jpg')}}"" class="img-fluid"
-									alt="image" /></a>
-							<div class="post-date">
-								<span class="date">15</span>
-								<span class="month">Sep</span>
-							</div>
-						</div>
-						<div class="blog_content">
-							<h3><a href="blog.html">Team you want to work with mistake runners</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui
-								venenatis dignissim.</p>
-						</div>
-					</div>
-				</div><!-- END COL-->
-				<div class="col-lg-4 col-sm-4 col-xs-12">
-					<div class="single_blog">
-						<div class="blog_img">
-							<a href="blog.html"><img src="{{asset('/storage/landing/assets/img/blog/blog-2.jpg')}}"" class="img-fluid"
-									alt="image" /></a>
-							<div class="post-date">
-								<span class="date">16</span>
-								<span class="month">Sep</span>
-							</div>
-						</div>
-						<div class="blog_content">
-							<h3><a href="blog.html">Lights winged seasons fish abundantly evening</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui
-								venenatis dignissim.</p>
-						</div>
-					</div>
-				</div><!-- END COL-->
-				<div class="col-lg-4 col-sm-4 col-xs-12">
-					<div class="single_blog">
-						<div class="blog_img">
-							<a href="blog.html"><img src="{{asset('/storage/landing/assets/img/blog/blog-3.jpg')}}"" class="img-fluid"
-									alt="image" /></a>
-							<div class="post-date">
-								<span class="date">17</span>
-								<span class="month">Sep</span>
-							</div>
-						</div>
-						<div class="blog_content">
-							<h3><a href="blog.html">Winged moved stars, food creature seed night</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui
-								venenatis dignissim.</p>
-						</div>
-					</div>
+	
 				</div><!-- END COL-->
 			</div><!-- END ROW -->
 		</div><!-- END CONTAINER -->

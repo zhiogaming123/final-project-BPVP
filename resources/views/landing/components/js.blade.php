@@ -24,4 +24,4 @@
 	<!-- WOW - Reveal Animations When You Scroll -->
 	<script src="{{asset('/storage/landing/assets/js/wow.min.js')}}"></script>
 	<!-- scripts js -->
-	<script src="{{asset('/storage/landing/assets/js/scripts.js')}}"></script>
+	<script src="{{asset('/storage/landing/assets/js/scripts.js')}}"></script> 

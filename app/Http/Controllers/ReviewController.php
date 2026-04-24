@@ -53,7 +53,7 @@ class ReviewController extends Controller
 
         Review::create($data);
 
-        return redirect()->route('landing.reviews.index')
-            ->with('success', 'Review Anda berhasil dikirim! Tunggu persetujuan admin.');
+        return redirect()->back()
+    ->with('success', 'Review Anda berhasil dikirim! Tunggu persetujuan admin.');
     }
 }

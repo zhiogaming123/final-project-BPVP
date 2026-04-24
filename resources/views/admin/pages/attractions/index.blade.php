@@ -12,6 +12,7 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
+            <th>Zone</th>
             <th>Description</th>
             <th>Price Range</th>
             <th>Image</th>
@@ -23,6 +24,7 @@
             <tr>
                 <td>{{ $attraction->id }}</td>
                 <td>{{ $attraction->name }}</td>
+                <td>{{ $attraction->zone->name }}</td>
                 <td>{{ $attraction->description }}</td>
                 <td>{{ $attraction->price_range }}</td>
                 <td>
